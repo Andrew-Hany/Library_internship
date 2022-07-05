@@ -4,6 +4,8 @@ import React, {Component, useState} from 'react';
 import Nav from './components/navbar';
 import Hompage from './components/U_homePage';
 import Tag from './components/tagging';
+import Rec from './components/blog2';
+import GUI from './components/blog3';
 import './App.css';
 import './circle.css';
 import { BrowserRouter,Routes,Route,Link} from "react-router-dom";
@@ -28,13 +30,32 @@ class App extends Component  {
       }/>
        <Route path='/tagging' element=
       { 
+        <div className="App "> 
+   
+          <Tag />
+        </div> 
+      }/>
+
+      <Route path='/Face%20Recognition' element=
+      { 
         <div className="App"> 
    
-          <Tag/>
+          <Rec/>
+        </div> 
+      }/>
+
+<Route path='/GUI' element=
+      { 
+        <div className="App"> 
+   
+          <GUI/>
         </div> 
       }/>
  
+   
+ 
     </Routes>
+    
   // </div>
     
     
