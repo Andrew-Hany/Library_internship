@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "./static/css/main.cab88c2b.css",
-    "main.js": "./static/js/main.fcf56295.js",
-    "static/js/787.7e406dd0.chunk.js": "./static/js/787.7e406dd0.chunk.js",
-    "static/media/Shrief.jpg": "./static/media/Shrief.dbd6de1aac27c158b1c2.jpg",
-    "static/media/facial.jpg": "./static/media/facial.3f23d2bbbae21ec090b9.jpg",
-    "static/media/GUI.jpg": "./static/media/GUI.bddfcd44fd3d16c21afc.jpg",
-    "static/media/tagging.jpg": "./static/media/tagging.4b03cf2ae4990cad05ac.jpg",
-    "static/media/Face2.jpeg": "./static/media/Face2.614b2b9586df0a990878.jpeg",
-    "static/media/Andrew.JPG": "./static/media/Andrew.b74f3c868f3731850b38.JPG",
-    "static/media/blog1.jpeg": "./static/media/blog1.f44bb7fd7905405d980e.jpeg",
-    "index.html": "./index.html",
-    "main.cab88c2b.css.map": "./static/css/main.cab88c2b.css.map",
-    "main.fcf56295.js.map": "./static/js/main.fcf56295.js.map",
-    "787.7e406dd0.chunk.js.map": "./static/js/787.7e406dd0.chunk.js.map"
+    "main.css": "/Library_internship/static/css/main.cab88c2b.css",
+    "main.js": "/Library_internship/static/js/main.23015295.js",
+    "static/js/787.7e406dd0.chunk.js": "/Library_internship/static/js/787.7e406dd0.chunk.js",
+    "static/media/Shrief.jpg": "/Library_internship/static/media/Shrief.dbd6de1aac27c158b1c2.jpg",
+    "static/media/facial.jpg": "/Library_internship/static/media/facial.3f23d2bbbae21ec090b9.jpg",
+    "static/media/GUI.jpg": "/Library_internship/static/media/GUI.bddfcd44fd3d16c21afc.jpg",
+    "static/media/tagging.jpg": "/Library_internship/static/media/tagging.4b03cf2ae4990cad05ac.jpg",
+    "static/media/Face2.jpeg": "/Library_internship/static/media/Face2.614b2b9586df0a990878.jpeg",
+    "static/media/Andrew.JPG": "/Library_internship/static/media/Andrew.b74f3c868f3731850b38.JPG",
+    "static/media/blog1.jpeg": "/Library_internship/static/media/blog1.f44bb7fd7905405d980e.jpeg",
+    "index.html": "/Library_internship/index.html",
+    "main.cab88c2b.css.map": "/Library_internship/static/css/main.cab88c2b.css.map",
+    "main.23015295.js.map": "/Library_internship/static/js/main.23015295.js.map",
+    "787.7e406dd0.chunk.js.map": "/Library_internship/static/js/787.7e406dd0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cab88c2b.css",
-    "static/js/main.fcf56295.js"
+    "static/js/main.23015295.js"
   ]
 }
