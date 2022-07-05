@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Library_internship/static/css/main.cab88c2b.css",
-    "main.js": "/Library_internship/static/js/main.d1b41047.js",
-    "static/js/787.f587e8d5.chunk.js": "/Library_internship/static/js/787.f587e8d5.chunk.js",
+    "main.js": "/Library_internship/static/js/main.c8fcb7cd.js",
+    "static/js/787.7e406dd0.chunk.js": "/Library_internship/static/js/787.7e406dd0.chunk.js",
     "static/media/Shrief.jpg": "/Library_internship/static/media/Shrief.dbd6de1aac27c158b1c2.jpg",
     "static/media/facial.jpg": "/Library_internship/static/media/facial.3f23d2bbbae21ec090b9.jpg",
     "static/media/GUI.jpg": "/Library_internship/static/media/GUI.bddfcd44fd3d16c21afc.jpg",
@@ -12,11 +12,11 @@
     "static/media/blog1.jpeg": "/Library_internship/static/media/blog1.f44bb7fd7905405d980e.jpeg",
     "index.html": "/Library_internship/index.html",
     "main.cab88c2b.css.map": "/Library_internship/static/css/main.cab88c2b.css.map",
-    "main.d1b41047.js.map": "/Library_internship/static/js/main.d1b41047.js.map",
-    "787.f587e8d5.chunk.js.map": "/Library_internship/static/js/787.f587e8d5.chunk.js.map"
+    "main.c8fcb7cd.js.map": "/Library_internship/static/js/main.c8fcb7cd.js.map",
+    "787.7e406dd0.chunk.js.map": "/Library_internship/static/js/787.7e406dd0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cab88c2b.css",
-    "static/js/main.d1b41047.js"
+    "static/js/main.c8fcb7cd.js"
   ]
 }
