@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Library_internship/static/css/main.cab88c2b.css",
-    "main.js": "/Library_internship/static/js/main.0222ab4f.js",
+    "main.css": "/Library_internship/static/css/main.6c5970e0.css",
+    "main.js": "/Library_internship/static/js/main.f5d07cf1.js",
     "static/js/787.7e406dd0.chunk.js": "/Library_internship/static/js/787.7e406dd0.chunk.js",
     "static/media/Shrief.jpg": "/Library_internship/static/media/Shrief.dbd6de1aac27c158b1c2.jpg",
     "static/media/facial.jpg": "/Library_internship/static/media/facial.3f23d2bbbae21ec090b9.jpg",
@@ -9,14 +9,21 @@
     "static/media/tagging.jpg": "/Library_internship/static/media/tagging.4b03cf2ae4990cad05ac.jpg",
     "static/media/Face2.jpeg": "/Library_internship/static/media/Face2.614b2b9586df0a990878.jpeg",
     "static/media/Andrew.JPG": "/Library_internship/static/media/Andrew.b74f3c868f3731850b38.JPG",
+    "static/media/tagging_pic5.JPG": "/Library_internship/static/media/tagging_pic5.d3edd4e3063009394e1b.JPG",
+    "static/media/tagging_pic2.JPG": "/Library_internship/static/media/tagging_pic2.de7ac39a2298e9ca3656.JPG",
+    "static/media/tagging_pic4.JPG": "/Library_internship/static/media/tagging_pic4.94d38c74c1acea6e6235.JPG",
     "static/media/blog1.jpeg": "/Library_internship/static/media/blog1.f44bb7fd7905405d980e.jpeg",
+    "static/media/tagging_pic7.JPG": "/Library_internship/static/media/tagging_pic7.27b4f3cc2913e4c537d6.JPG",
+    "static/media/tagging_pic8.JPG": "/Library_internship/static/media/tagging_pic8.8b66eeceddd74a425ec3.JPG",
+    "static/media/tagging_pic3.JPG": "/Library_internship/static/media/tagging_pic3.3b496e1284bc5a12827b.JPG",
+    "static/media/tagging_pic6.JPG": "/Library_internship/static/media/tagging_pic6.50e07a4868746465b597.JPG",
     "index.html": "/Library_internship/index.html",
-    "main.cab88c2b.css.map": "/Library_internship/static/css/main.cab88c2b.css.map",
-    "main.0222ab4f.js.map": "/Library_internship/static/js/main.0222ab4f.js.map",
+    "main.6c5970e0.css.map": "/Library_internship/static/css/main.6c5970e0.css.map",
+    "main.f5d07cf1.js.map": "/Library_internship/static/js/main.f5d07cf1.js.map",
     "787.7e406dd0.chunk.js.map": "/Library_internship/static/js/787.7e406dd0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cab88c2b.css",
-    "static/js/main.0222ab4f.js"
+    "static/css/main.6c5970e0.css",
+    "static/js/main.f5d07cf1.js"
   ]
 }
