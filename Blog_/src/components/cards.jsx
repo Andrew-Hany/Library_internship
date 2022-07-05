@@ -13,11 +13,11 @@ export default class Cards extends Component {
         state={
                 cards:[
                     {"task":"tagging",
-                     "desciption":"A feature for the user to tag people. This feature will help in creating the database for automatically face recognition",
+                     "desciption":"A feature for the user to tag people.",
                      "Im":Tag,
                      "percentage":100,
                      "color":"green"},
-                    {"task":"Face Recognition", "desciption":"Training a model to recognise a person from set of known classes","Im":Face,"percentage":30,"color":"red"},
+                    {"task":"Face Recognition", "desciption":"Training a model to recognise a person from set of known classes \n\n","Im":Face,"percentage":30,"color":"red"},
                     {"task":"GUI", "desciption":"Creating an GUI for the users to interact with our program","Im":GUI,"percentage":0,"color":"red"},
                     // {"task":"2"}
                 ]

@@ -104,7 +104,18 @@ export default class Tagging extends Component {
                                     a crropped face for President Ricciardone in a folder called "Ricciardone"
                                     </p>
                                     <img className="rounded mx-auto d-block m-5 responsive-image2" src={Tag8}/>
-                                    <Link to="/Face%20Recognition">Next Blog</Link>
+                                    <p className='font-weight-bold'> 
+                                        As you can see we are trying to build a data base of well-known people to be able to use the database to train a model  
+                                    </p>
+                                    <div className='row'>
+                                        <div className='text-left col-6'>
+                                        <Link className='rounded bg-danger text-decoration-none text-dark p-2 text-right' to="/">Home</Link>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                        <Link className='rounded bg-success text-decoration-none text-dark p-2 text-right' to="/Face%20Recognition">Next Blog</Link>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
                             <div className='col-3'>

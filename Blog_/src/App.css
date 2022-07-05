@@ -8,8 +8,8 @@
  
   } 
   .responsive-image2 { 
-    width: 600px;
-     height: 400px;
+    width: 70%;
+     height: 70%px;
    
     } 
 .Facial_recognition{
@@ -75,6 +75,7 @@
     float: left;
   
   }
+ 
   .footer{
 
     position: relative;
