@@ -82,11 +82,11 @@ export default class Tagging extends Component {
                                     <img className="rounded mx-auto d-block m-5 responsive-image2" src={Tag3}/>
 
                                     <p className=' '>  
-                                           Then, There are two things happened. The first thing is the picture will appear again but woth name tag
+                                           Then, There are two things happened. The first thing is the picture will appear again but with name tag
                                     </p>
                                     <img className="rounded mx-auto d-block m-5 responsive-image2" src={Tag4}/>
                                     <p className=' '>  
-                                          The second this is to save a crropped face for President Dallal in a folder called "Dallal"
+                                          The second  is to save a crropped face for President Dallal in a folder called "Dallal"
                                     </p>
                                     <img className="rounded mx-auto d-block m-5 responsive-image2" src={Tag6}/>
                                     <p className=' '>  
