@@ -86,7 +86,7 @@ export default class Tagging extends Component {
                                     </p>
                                     <img className="rounded mx-auto d-block m-5 responsive-image2" src={Tag4}/>
                                     <p className=' '>  
-                                          The second  is to save a crropped face for President Dallal in a folder called "Dallal"
+                                          The second thing  is to save a crropped face for President Dallal in a folder called "Dallal"
                                     </p>
                                     <img className="rounded mx-auto d-block m-5 responsive-image2" src={Tag6}/>
                                     <p className=' '>  
@@ -101,11 +101,11 @@ export default class Tagging extends Component {
 
                                     <img className="rounded mx-auto d-block m-5 responsive-image2" src={Tag7}/>
                                     <p className=' '>  
-                                    a crropped face for President Ricciardone in a folder called "Ricciardone"
+                                    a crropped face for President Ricciardone is created in a folder called "Ricciardone"
                                     </p>
                                     <img className="rounded mx-auto d-block m-5 responsive-image2" src={Tag8}/>
                                     <p className='font-weight-bold'> 
-                                        As you can see we are trying to build a data base of well-known people to be able to use the database to train a model  
+                                        As you can see we are trying to build a database of well-known people to be able to use the database to train a model  
                                     </p>
                                     <div className='row'>
                                         <div className='text-left col-6'>
