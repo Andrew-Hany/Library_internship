@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Library_internship/static/css/main.1cdcc526.css",
-    "main.js": "/Library_internship/static/js/main.6507e523.js",
+    "main.css": "/Library_internship/static/css/main.f7e733e0.css",
+    "main.js": "/Library_internship/static/js/main.0151bd7b.js",
     "static/js/787.7e406dd0.chunk.js": "/Library_internship/static/js/787.7e406dd0.chunk.js",
-    "static/media/Shrief.jpg": "/Library_internship/static/media/Shrief.dbd6de1aac27c158b1c2.jpg",
     "static/media/facial.jpg": "/Library_internship/static/media/facial.3f23d2bbbae21ec090b9.jpg",
+    "static/media/Shrief.jpg": "/Library_internship/static/media/Shrief.9e6f5dd4ef86707a8411.jpg",
     "static/media/GUI.jpg": "/Library_internship/static/media/GUI.bddfcd44fd3d16c21afc.jpg",
     "static/media/tagging.jpg": "/Library_internship/static/media/tagging.4b03cf2ae4990cad05ac.jpg",
     "static/media/Face2.jpeg": "/Library_internship/static/media/Face2.614b2b9586df0a990878.jpeg",
@@ -22,12 +22,12 @@
     "static/media/tagging_pic3.JPG": "/Library_internship/static/media/tagging_pic3.3b496e1284bc5a12827b.JPG",
     "static/media/tagging_pic6.JPG": "/Library_internship/static/media/tagging_pic6.50e07a4868746465b597.JPG",
     "index.html": "/Library_internship/index.html",
-    "main.1cdcc526.css.map": "/Library_internship/static/css/main.1cdcc526.css.map",
-    "main.6507e523.js.map": "/Library_internship/static/js/main.6507e523.js.map",
+    "main.f7e733e0.css.map": "/Library_internship/static/css/main.f7e733e0.css.map",
+    "main.0151bd7b.js.map": "/Library_internship/static/js/main.0151bd7b.js.map",
     "787.7e406dd0.chunk.js.map": "/Library_internship/static/js/787.7e406dd0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cdcc526.css",
-    "static/js/main.6507e523.js"
+    "static/css/main.f7e733e0.css",
+    "static/js/main.0151bd7b.js"
   ]
 }
