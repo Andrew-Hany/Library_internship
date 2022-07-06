@@ -16,11 +16,12 @@ export default class navbar extends Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active"  aria-current="page" onClick={this.props.userHomepagetoggle} style={{cursor: "pointer"}}>Home</a>
-                  {/* <Link className="nav-link active"  aria-current="page" onClick={this.props.userHomepagetoggle} style={{cursor: "pointer"}} to="/home">Home</Link> */}
+                {/* <a className="nav-link active"  aria-current="page" onClick={this.props.userHomepagetoggle} style={{cursor: "pointer"}}>Home</a> */}
+                  <Link className="nav-link active"  aria-current="page" onClick={this.props.userHomepagetoggle} style={{cursor: "pointer"}} to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" onClick={this.props.userPagetoggle} style={{cursor: "pointer"}}>About us</a>
+                {/* <a className="nav-link" onClick={this.props.userPagetoggle} style={{cursor: "pointer"}}>About us</a> */}
+                <Link className="nav-link" onClick={this.props.userPagetoggle} style={{cursor: "pointer"}} to="/about">About us</Link> 
                        {/* <Link className="nav-link" onClick={this.props.userPagetoggle} style={{cursor: "pointer"}} to="/profile">Profile</Link> */}
 
               </li>

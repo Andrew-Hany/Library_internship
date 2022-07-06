@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Nav from './navbar';
 import Im from './facial.jpg'
-// import Im from './travelll.jpg'
+
 import Cards from './cards';
 import Footer from './footer';
 
