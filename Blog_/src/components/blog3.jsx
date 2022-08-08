@@ -30,7 +30,7 @@ export default class GUI extends Component {
            
                        <div className="container-fluid shadow-lg m-1">
                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                       <div className="text-center text-danger fs-2 fw-bold ml-3">Face Recognition</div>
+                       <div className="text-center text-danger fs-2 fw-bold ml-3">GUI</div>
                        
                    
 
