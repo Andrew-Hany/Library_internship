@@ -18,7 +18,6 @@ export default class GUI extends Component {
 
 
     render() {
-
         return (
             <div className='cointainer'>
                          <Nav/>
