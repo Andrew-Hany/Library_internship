@@ -83,7 +83,7 @@ export default class Rec extends Component {
                             <p className='mt-5 font-weight-bold'>Further development will include a machine learning model to work as a classifier 
                             as another approach to recognize faces once we have a large dataset, 
                             then we will compare both approaches to use the one with higher efficiency. We will Test the model accuracy and try to maximize
-                            the model's accuracy
+                            the model's accuracy. <span className='text-danger font-weight-bold'> After testing both the machine learning models and this one, we found that this one will be more appropriate. Since this model is build with deep learning, it is the most accurate </span>
 
                             </p>
 
