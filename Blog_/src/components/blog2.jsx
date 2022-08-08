@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Nav from './navbar';
+import Footer from './footer';
 import Im from './blog1.jpeg'
 // import Im from './travelll.jpg'
 import B1 from './blog2_1.jpeg'
@@ -8,7 +9,7 @@ import B3 from './blog2_3.jpeg'
 import B4 from './blog2_4.jpeg'
 
 
-import Footer from './footer';
+
 
 import { Link } from 'react-router-dom';
 export default class Rec extends Component {
