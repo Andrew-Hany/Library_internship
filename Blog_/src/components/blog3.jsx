@@ -58,6 +58,7 @@ export default class GUI extends Component {
                             <p> I will go through two main things:</p>
                             <li><a href="#point1" className='ml-3'>setup the environment</a></li>
                             <li><a href="#point2" className='ml-3'>A tour in the GUI</a></li>
+                            <li><a href="#point3" className='ml-3'>Download The Application</a></li>
                         </div>
                         <div className='m-3 font-weight-bold fs1' id="point1">
                             setup the environment 
@@ -128,7 +129,7 @@ export default class GUI extends Component {
                         <div className='m-3 ml-5 mr-5  border-bottom border-info'></div>
                         <img className="responsive-image2" src={Im7}/>
                         <div className='m-3 border-bottom border-dark'></div>
-                        <a href="https://drive.google.com/file/d/1qyXPH_rBhkhXxJbT9zD_rOtRdOTPH2iI/view?usp=sharing" className='border-0 rounded bg-info text-decoration-none text-dark p-2 text-right'> Download from Google drive</a>
+                        <a id="point3" href="https://drive.google.com/file/d/1qyXPH_rBhkhXxJbT9zD_rOtRdOTPH2iI/view?usp=sharing" className='border-0 rounded bg-info text-decoration-none text-dark p-2 text-right'> Download from Google drive</a>
                         <div className='m-3 border-bottom border-dark'></div>
                         <div className="m-5"></div>
                        
