@@ -5,8 +5,7 @@ import Im from './facial.jpg'
 import Cards from './cards';
 import Footer from './footer';
 
-// import Axios from "axios";
-// import { Link } from 'react-router-dom';
+
 export default class userhomepage extends Component {
  
 

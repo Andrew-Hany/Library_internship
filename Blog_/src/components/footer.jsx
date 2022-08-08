@@ -16,17 +16,21 @@ export default class footer extends Component {
 
                       <div className="fs-4 text-info fw-light">This website is created by a group of undergraduate students at AUC for the Library Internship</div> 
                         {/* contacts: */}
-                        {/* <div className="row fs-5">
-                            
-                        </div> */}
-                        <div className="fs-5 FloatLeft">
+                        <div className="ml-5 fs-5 FloatLeft">
+                            <img className=""/> 
+                        </div>
+                        <div className="fs-5  FloatLeft">
+                            <img className=""/> 
+                        </div>
+                        
+                        <div className="  fs-5 FloatLeft">
                       
                             <div className="">Andrew Nady </div> 
                             <img src={Andrew} className="photo "/> 
                         </div>
                    
 
-                        <div className="fs-5 FloatLeft">
+                        <div className=" fs-5 FloatLeft">
                             <div>Shrief</div> 
                             <img src={SH} className="photo "/> 
                         </div>
