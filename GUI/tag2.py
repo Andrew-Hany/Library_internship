@@ -1,3 +1,4 @@
+import os
 from tkinter import *
 from tkinter import filedialog
 from PIL import ImageTk, Image
@@ -10,6 +11,7 @@ from read_encodings import read_encodings
 import pandas as pd
 import re
 import cv2
+import webbrowser
 
 counter = 0
 images = []
@@ -141,11 +143,11 @@ def build_info_getter():
     infoLabel.config(text = "Information for Metadata", font = 'Times 10 bold')
     infoLabel.grid(row=0, column=4, padx=(20, 0))
 
-    personNameLabel.config(text='Person(s)  (name1,name2,...)')
+    personNameLabel.config(text='Name(s)  (name 1; name 2; ...)')
     personNameLabel.grid(row=1, column=4)
     personNameEntry.grid(row=2, column=4)
 
-    authorLabel.config(text="Author")
+    authorLabel.config(text="Photographer")
     authorLabel.grid(row=3, column=4)
     authorEntry.grid(row=4, column=4)
 
@@ -178,7 +180,7 @@ def build_info_getter():
     # personNameLabel.grid(row=1, column=3)
 
 
-def create_metaData(metaDic,photogram_name):
+def create_metaData(metaDic,photograph_name):
     global  paths
     imageMeta_df = pd.DataFrame(metaDic, columns=metaDic.keys())
 
@@ -187,7 +189,7 @@ def create_metaData(metaDic,photogram_name):
 
     try:
         general_df=pd.read_csv(general_filePath)
-        general_df=general_df.loc[general_df["photogram_name"] != photogram_name]
+        general_df=general_df.loc[general_df["photograph_name"] != photograph_name]
         frames = [general_df,imageMeta_df]
         result = pd.concat(frames, ignore_index=True)
 
@@ -207,28 +209,30 @@ def save(people,tagbool):
         person_var=people
     else:
         person_var = personNameEntry.get()
-        person_var = person_var.split(",")
+        person_var = person_var.split(";")
+        for person_name in person_var:
+            person_name = person_name.strip()
 
-    author_var = authorEntry.get()
+    photograapher_var = authorEntry.get()
     date_var = dateCreatedEntry.get()
     place_var = placeNameEntry.get()
     event_var = eventNameEntry.get()
     desc_var = descriptionEntry.get()
     source_var = sourceEntry.get()
 
-    photogram_name=paths[counter].replace("\\", "/").split("/")[-1]
+    photograph_name=paths[counter].replace("\\", "/").split("/")[-1]
     metadata={
 
-        "photogram_name":[photogram_name],
+        "photograph_name":[photograph_name],
         "persons":[person_var],
-        "author":[author_var],
+        "photographer":[photograapher_var],
         "date":[date_var],
         "place":[place_var],
         "event":[event_var],
         "description":[desc_var],
         "source":[source_var]
     }
-    create_metaData(metadata,photogram_name)
+    create_metaData(metadata,photograph_name)
     if tagbool==True:
 
         photo=tag(face_dict[counter], person_var,paths[counter])
@@ -264,20 +268,22 @@ def recognize():
                 encodings = read_encodings(path)
                 # print("done reading encodings")
                 check = face_recognition.compare_faces(encodings, unkonwn_img_encoding)
-                if check.count(True)/len(check) >= 0.8:
+                # if check.count(True)/len(check) >= 0.8:
+
+                if len(check) and check.count(True)/len(check) >= 0.8:
                     personDetectedName = path.split('/')[-1]
                     print(f"person detected: {personDetectedName}")
                     people.append(personDetectedName)
-                    photo = reco(face_dict[image_counter]["unknown" + str(i + 1)], personDetectedName, photo)
+                    photo = reco(face_dict[image_counter]["X" + str(i + 1)], personDetectedName, photo)
 
                     found_flag = True
-                    # break
+                    break
 
             if not found_flag:
 
                 print(f"Could not match this face ({img_name}) to any person in our database")
-                photo = reco(face_dict[image_counter]["unknown" + str(i + 1)], "unknown"+str(i + 1), photo)
-                people.append("unknown"+str(i + 1))
+                photo = reco(face_dict[image_counter]["X" + str(i + 1)], "X"+str(i + 1), photo)
+                people.append("X"+str(i + 1))
             i += 1
         photo = cv2.cvtColor(photo, cv2.COLOR_BGR2RGB)
         photo = Image.fromarray(photo)
@@ -331,9 +337,63 @@ def go_backward():
         button_forward['state'] = NORMAL
 
 
+def build_environment():
+    root_help = Tk()
+    root_help.title('Help')
+    root_help.geometry("420x270")
+
+    create_env_label = Label(root_help, text='Click the button below to choose where to create the working environment')
+    create_env_label.pack()
+    # create_env_label.config()
+    create_env_button = Button(root_help, text='Create Environment', bd=2, command=mkdirs, relief=GROOVE)
+
+    # create_env_button.pack()
+    # blog_label.pack()
+    # contact_label.pack()
+    # andrew_label.pack()
+    # sherif_label.pack()
+
+    blog_label = Label(root_help, text='Check our blog', fg="blue", cursor="hand2")
+    blog_label.bind("<Button-1>", lambda e: callback("https://andrew-hany.github.io/Library_internship/"))
+
+    contact_label = Label(root_help, text='Contact us:')
+
+    andrew_label = Text(root_help,  height=1, borderwidth=0, width=36, bg='#F5F5F5')
+    andrew_label.insert(1.0, 'Andrew Hany: andrewhany@aucegypt.edu')
+
+    sherif_label = Text(root_help,  height=1, borderwidth=0, width=40, bg='#F5F5F5')
+    sherif_label.insert(1.0, 'Sherif Sakran: sherifsakran@aucegypt.edu')
+
+    create_env_label.grid(row=0, column=0, columnspan=3, pady=10, padx=10)
+    create_env_button.grid(row=1, column=1, pady=10, padx=10)
+    blog_label.grid(row=2, column=1, pady=10, padx=10)
+    contact_label.grid(row=3, column=1, pady=10, padx=10)
+
+    andrew_label.grid(row=4, column=0, columnspan=3, pady=10, padx=10)
+    sherif_label.grid(row=5, column=0, columnspan=3, pady=10, padx=10)
+
+
+def callback(url):
+    webbrowser.open_new(url)
+
+
+def mkdirs():
+    path = filedialog.askdirectory()
+    if path != '':
+        try:
+            environment = "Environment"
+            os.mkdir(path+ "/" + environment)
+            os.mkdir(path+ "/" + environment + "/faces")
+            os.mkdir(path+ "/" + environment + "/faces" + "/training_set")
+            os.mkdir(path+ "/" + environment + "/images")
+            os.mkdir(path+ "/" + environment + "/faces" + "/Meta_data")
+        except FileExistsError:
+            print('file already exists')
+
+
 root = Tk()
 root.title('Face Recognition')
-root.geometry("570x450")
+root.geometry("570x500")
 # p1 = PhotoImage(file='icon.png')
 # root.iconphoto(False, p1)
 
@@ -371,6 +431,9 @@ nameLabel.grid(row=3+imgRowSpan-1, column=1, columnspan=imgColSpan)
 
 counterLabel = Label(root, text='\t     ')
 counterLabel.grid(row=4+imgRowSpan-1, column=1, pady=(10, 0))
+
+helpButton = Button(root, text='Help', command=build_environment)
+helpButton.grid(row=5+imgRowSpan-1, column=1, pady=(10, 0))
 
 emptyColumn = Label(root, text='\t')
 emptyColumn.grid(row=0, column=3, rowspan=5+imgRowSpan)
