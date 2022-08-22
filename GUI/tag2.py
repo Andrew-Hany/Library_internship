@@ -386,7 +386,7 @@ def mkdirs():
             os.mkdir(path+ "/" + environment + "/faces")
             os.mkdir(path+ "/" + environment + "/faces" + "/training_set")
             os.mkdir(path+ "/" + environment + "/images")
-            os.mkdir(path+ "/" + environment + "/faces" + "/Meta_data")
+            os.mkdir(path+ "/" + environment + "/images" + "/Meta_data")
         except FileExistsError:
             print('file already exists')
 
