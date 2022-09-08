@@ -8,7 +8,7 @@ def build_encodings(path, n):
     min_imgs_numner = min(len(person_photos_paths), n)
     person_photos_paths = person_photos_paths[:min_imgs_numner]
     # print(person_photos_paths)
-
+    print(f'path: {path}')
     person_images = []
     for path_i in person_photos_paths:
         person_images.append(face_recognition.load_image_file(path_i))
@@ -19,12 +19,16 @@ def build_encodings(path, n):
         print("Starting encodings")
         person_images_encodings = []
         for img in person_images:
-            person_images_encodings.append(face_recognition.face_encodings(img)[0])
+            try:
+                person_images_encodings.append(face_recognition.face_encodings(img)[0])
+                f.write(str(face_recognition.face_encodings(img)[0]))
+                f.write("\n\n")
+            except IndexError:
+                print('could not detect faces in this photo')
             # print(face_recognition.face_encodings(img)[0])
-            f.write(str(face_recognition.face_encodings(img)[0]))
-            f.write("\n\n")
+
             
-            
+    print(f'done: {path}')
 def read_encodings(path):
     file_name = path + '/' + path.split('/')[-1]+"_encodings.txt"
     encodings = []
