@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Library_internship/static/css/main.00fb0d71.css",
-    "main.js": "/Library_internship/static/js/main.a030fa42.js",
+    "main.js": "/Library_internship/static/js/main.e4c14038.js",
     "static/js/787.7e406dd0.chunk.js": "/Library_internship/static/js/787.7e406dd0.chunk.js",
     "static/media/facial.jpg": "/Library_internship/static/media/facial.3f23d2bbbae21ec090b9.jpg",
     "static/media/Shrief.jpg": "/Library_internship/static/media/Shrief.9e6f5dd4ef86707a8411.jpg",
@@ -16,10 +16,13 @@
     "static/media/blog2_4.jpeg": "/Library_internship/static/media/blog2_4.be5143d2251adaea0e45.jpeg",
     "static/media/blog3_2.JPG": "/Library_internship/static/media/blog3_2.b407d0d0ad1908b7dedc.JPG",
     "static/media/blog3_4.JPG": "/Library_internship/static/media/blog3_4.b419284c318b160f9878.JPG",
-    "static/media/blog3_6.jpg": "/Library_internship/static/media/blog3_6.9cccabb5b6c0d89ad3e6.jpg",
-    "static/media/blog3_3.JPG": "/Library_internship/static/media/blog3_3.26ebce08e1827b59754c.JPG",
+    "static/media/blog3_6.jpg": "/Library_internship/static/media/blog3_6.9e497a83c277b7918c76.jpg",
+    "static/media/blog3_11.JPG": "/Library_internship/static/media/blog3_11.d397613dc7c4e0581c21.JPG",
+    "static/media/blog3_3.JPG": "/Library_internship/static/media/blog3_3.3b4abfabdf7cbf21e70c.JPG",
     "static/media/blog2_1.jpeg": "/Library_internship/static/media/blog2_1.38f3ce1aa444a9a5555d.jpeg",
     "static/media/blog2_3.jpeg": "/Library_internship/static/media/blog2_3.9d547a13736a8e90ab37.jpeg",
+    "static/media/blog3_10.JPG": "/Library_internship/static/media/blog3_10.b8f7a246f8e66cca7009.JPG",
+    "static/media/blog3_9.JPG": "/Library_internship/static/media/blog3_9.650f5d04e616efa3fecb.JPG",
     "static/media/blog1.jpeg": "/Library_internship/static/media/blog1.f44bb7fd7905405d980e.jpeg",
     "static/media/blog3_1.JPG": "/Library_internship/static/media/blog3_1.ba4c7f0d0c361d544664.JPG",
     "static/media/tagging_pic7.JPG": "/Library_internship/static/media/tagging_pic7.27b4f3cc2913e4c537d6.JPG",
@@ -30,11 +33,11 @@
     "static/media/tagging_pic6.JPG": "/Library_internship/static/media/tagging_pic6.50e07a4868746465b597.JPG",
     "index.html": "/Library_internship/index.html",
     "main.00fb0d71.css.map": "/Library_internship/static/css/main.00fb0d71.css.map",
-    "main.a030fa42.js.map": "/Library_internship/static/js/main.a030fa42.js.map",
+    "main.e4c14038.js.map": "/Library_internship/static/js/main.e4c14038.js.map",
     "787.7e406dd0.chunk.js.map": "/Library_internship/static/js/787.7e406dd0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.00fb0d71.css",
-    "static/js/main.a030fa42.js"
+    "static/js/main.e4c14038.js"
   ]
 }
