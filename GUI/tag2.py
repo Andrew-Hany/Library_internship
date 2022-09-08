@@ -213,8 +213,13 @@ def save(people,tagbool):
     else:
         person_var = personNameEntry.get()
         person_var = person_var.split(";")
-        for person_name in person_var:
-            person_name = person_name.strip()
+        print(person_var)
+        for i in range(len(person_var)):
+            person_var[i] = person_var[i].strip()
+
+        if person_var[-1] == '':
+            person_var = person_var[:-1]
+        print(person_var)
 
     photograapher_var = authorEntry.get()
     date_var = dateCreatedEntry.get()
@@ -399,7 +404,7 @@ def mkdirs():
             os.mkdir(path+ "/" + environment + "/faces")
             os.mkdir(path+ "/" + environment + "/faces" + "/training_set")
             os.mkdir(path+ "/" + environment + "/images")
-            os.mkdir(path+ "/" + environment + "/faces" + "/Meta_data")
+            os.mkdir(path+ "/" + environment + "/images" + "/Meta_data")
         except FileExistsError:
             print('file already exists')
 
