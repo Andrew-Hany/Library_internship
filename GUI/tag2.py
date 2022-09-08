@@ -189,11 +189,14 @@ def create_metaData(metaDic,photograph_name):
 
     try:
         general_df=pd.read_csv(general_filePath)
-        general_df=general_df.loc[general_df["photograph_name"] != photograph_name]
-        frames = [general_df,imageMeta_df]
-        result = pd.concat(frames, ignore_index=True)
+        general_df_len=len(general_df.loc[general_df["photograph_name"] == photograph_name])
+        if general_df_len==0:
+            frames = [general_df,imageMeta_df]
+            result = pd.concat(frames, ignore_index=True)
 
-        result.to_csv(general_filePath, columns=metaDic.keys())
+            result.to_csv(general_filePath, columns=metaDic.keys())
+        else:
+            general_df.to_csv(general_filePath, columns=metaDic.keys())
     except:
         imageMeta_df.to_csv(general_filePath)
     imageMeta_filePath = re.findall(".*\/", paths[counter].replace("\\", "/"))[0]+"Meta_data/"+ paths[counter].replace("\\", "/").split("/")[-1].split(".")[0] + "_metaData.csv"
@@ -220,6 +223,10 @@ def save(people,tagbool):
     desc_var = descriptionEntry.get()
     source_var = sourceEntry.get()
 
+
+
+
+
     photograph_name=paths[counter].replace("\\", "/").split("/")[-1]
     metadata={
 
@@ -241,7 +248,13 @@ def save(people,tagbool):
         photo = photo.resize((img_h, img_w), Image.ANTIALIAS)
         images[counter]=ImageTk.PhotoImage(photo)
         build_photos_viewer(True)
-
+    personNameEntry.delete(0,END)
+    authorEntry.delete(0, END)
+    dateCreatedEntry.delete(0, END)
+    placeNameEntry.delete(0, END)
+    eventNameEntry.delete(0, END)
+    descriptionEntry.delete(0, END)
+    sourceEntry.delete(0, END)
 
 
 def recognize():
@@ -272,7 +285,7 @@ def recognize():
 
                 if len(check) and check.count(True)/len(check) >= 0.8:
                     personDetectedName = path.split('/')[-1]
-                    print(f"person detected: {personDetectedName}")
+                    # print(f"person detected: {personDetectedName}")
                     people.append(personDetectedName)
                     photo = reco(face_dict[image_counter]["X" + str(i + 1)], personDetectedName, photo)
 
@@ -281,7 +294,7 @@ def recognize():
 
             if not found_flag:
 
-                print(f"Could not match this face ({img_name}) to any person in our database")
+                # print(f"Could not match this face ({img_name}) to any person in our database")
                 photo = reco(face_dict[image_counter]["X" + str(i + 1)], "X"+str(i + 1), photo)
                 people.append("X"+str(i + 1))
             i += 1
@@ -386,7 +399,7 @@ def mkdirs():
             os.mkdir(path+ "/" + environment + "/faces")
             os.mkdir(path+ "/" + environment + "/faces" + "/training_set")
             os.mkdir(path+ "/" + environment + "/images")
-            os.mkdir(path+ "/" + environment + "/images" + "/Meta_data")
+            os.mkdir(path+ "/" + environment + "/faces" + "/Meta_data")
         except FileExistsError:
             print('file already exists')
 

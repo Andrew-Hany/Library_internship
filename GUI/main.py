@@ -59,9 +59,10 @@ def tag(face_dict6,name,imgg):
     path = re.findall(".*\/", path[:-1])[0]
     print(1,path)
     img = pre_processing(imgg)
+    img2 = pre_processing(imgg)
     for i in range(len(face_dict6)):
         (top,bottom,left,right)=face_dict6["X"+str(i+1)]
-        img1 = img[top-margin:bottom+margin, left-margin:right+margin, :]
+        img1 = img2[top-margin:bottom+margin, left-margin:right+margin, :]
         add_to_dir(name[i], img1,path)
 
         cv2.putText(img, name[i], (left,top), cv2.FONT_HERSHEY_SIMPLEX,
