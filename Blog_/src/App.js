@@ -7,6 +7,7 @@ import About from './components/about';
 import Tag from './components/tagging';
 import Rec from './components/blog2';
 import GUI from './components/blog3';
+import Future from './components/blog4';
 import './App.css';
 import './circle.css';
 import { BrowserRouter,Routes,Route,Link,useLocation } from "react-router-dom";
@@ -55,6 +56,14 @@ class App extends Component  {
           <Rec/>
         </div> 
       }/>
+       <Route path='/Future%20Improvement' element=
+      { 
+        <div className="App"> 
+   
+          <Future/>
+        </div> 
+      }/>
+      Future Improvement
 
 <Route path='/GUI' element=
       { 

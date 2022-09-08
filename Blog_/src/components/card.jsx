@@ -20,7 +20,7 @@ export default class Card extends Component {
                     <Link className="d-block text-decoration-none text-dark shadow card-body" style={{width: "18rem", backgroundColor:"white",cursor:"pointer"}} to={"/"+this.props.task}>
                         <img src={this.props.Im} className="card-img-top cropped1" />
                         <h6 className="text-capitalize card-title">{this.props.task}</h6>
-                        <p className="text-capitalize card-text fs-6 ">{this.props.desciption}</p>
+                        <p className=" card-text fs-6 ">{this.props.desciption}</p>
                         
                        <Prog
                        percentage={this.props.percentage}

@@ -19,6 +19,7 @@ export default class Cards extends Component {
                      "color":"green"},
                     {"task":"Face Recognition", "desciption":"Training a model to recognise a person from set of known classes \n\n","Im":Face,"percentage":100,"color":"green"},
                     {"task":"GUI", "desciption":"Creating an GUI for the users to interact with our program","Im":GUI,"percentage":100,"color":"green"},
+                    {"task":"Future Improvement", "desciption":"Area of improvement","Im":GUI,"percentage":0,"color":"red"},
                     // {"task":"2"}
                 ]
         }
@@ -39,6 +40,8 @@ export default class Cards extends Component {
                     />
                 
                 )) } 
+           
+
             </div>
             )
         }
